@@ -27,7 +27,8 @@ func _physics_process(delta):
 	else:
 		velocity.y += GRAVITY*delta
 	#Collisions
-	for i in get_slide_count():
-		var collider = get_slide_collision(i).collider
-		if collider.is_in_group("monsters"):
-			print("MORREU!!!")
+	for i in get_slide_count(): #um unico movimento pode causar várias colisões
+		if get_slide_collision(i).collider.is_in_group("monsters"):
+			global.lives -= 1
+			get_tree().reload_current_scene()
+			break # evita que o personagem morra mais de uma vez se houver mais de 1 colisão
