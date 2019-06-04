@@ -6,8 +6,10 @@ const JUMP = -800
 const WALK = 300
 
 var velocity = Vector2(0,0.1)
+var jump_sound
 
 func _ready():
+	jump_sound = get_node("JumpSound")
 	set_physics_process(true)
 
 func _physics_process(delta):
@@ -22,6 +24,7 @@ func _physics_process(delta):
 	if self.is_on_floor():
 		if Input.is_action_just_pressed("ui_up"):
 			velocity.y = JUMP
+			jump_sound.play()
 		else:
 			velocity.y = 0.1
 	else:

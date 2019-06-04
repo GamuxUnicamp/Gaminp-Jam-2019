@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Jump_00.wav-5fa68a5d514586134924cb7b6d1d76c1.sample"
+
+[deps]
+
+source_file="res://media/opengameart/LittleRobotSoundFactory/Jump_00.wav"
+dest_files=[ "res://.import/Jump_00.wav-5fa68a5d514586134924cb7b6d1d76c1.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

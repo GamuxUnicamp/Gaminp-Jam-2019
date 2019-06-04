@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Jingle_Lose_00.wav-7f0df87ad3ae9827df88a169794238fa.sample"
+
+[deps]
+
+source_file="res://media/opengameart/LittleRobotSoundFactory/Jingle_Lose_00.wav"
+dest_files=[ "res://.import/Jingle_Lose_00.wav-7f0df87ad3ae9827df88a169794238fa.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

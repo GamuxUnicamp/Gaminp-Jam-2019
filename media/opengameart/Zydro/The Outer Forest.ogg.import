@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/The Outer Forest.ogg-7e7ef84492cbb0635023579d2ad5db99.oggstr"
+
+[deps]
+
+source_file="res://media/opengameart/Zydro/The Outer Forest.ogg"
+dest_files=[ "res://.import/The Outer Forest.ogg-7e7ef84492cbb0635023579d2ad5db99.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

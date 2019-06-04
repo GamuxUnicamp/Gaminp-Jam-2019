@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Pickup_02.wav-9fa6f801c5d53c23a0f4a4ab30088380.sample"
+
+[deps]
+
+source_file="res://media/opengameart/LittleRobotSoundFactory/Pickup_02.wav"
+dest_files=[ "res://.import/Pickup_02.wav-9fa6f801c5d53c23a0f4a4ab30088380.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

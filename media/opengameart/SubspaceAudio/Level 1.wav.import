@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Level 1.wav-4f5027a05aec7cd2bb361f939e245e27.sample"
+
+[deps]
+
+source_file="res://media/opengameart/SubspaceAudio/Level 1.wav"
+dest_files=[ "res://.import/Level 1.wav-4f5027a05aec7cd2bb361f939e245e27.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

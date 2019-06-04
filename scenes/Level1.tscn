@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://scripts/Level1.gd" type="Script" id=1]
 [ext_resource path="res://media/mushroom_forest_background.jpg" type="Texture" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://scenes/Player1.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/monsters/Orange.tscn" type="PackedScene" id=5]
 [ext_resource path="res://scenes/monsters/Mushroom.tscn" type="PackedScene" id=6]
+[ext_resource path="res://media/opengameart/Muncheybobo/Adventure Music.ogg" type="AudioStream" id=7]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 3500, 100 )
@@ -45,6 +46,7 @@ position = Vector2( 99.9805, 765.979 )
 current = true
 limit_left = 0
 limit_top = 0
+limit_right = 14000
 limit_bottom = 0
 smoothing_enabled = true
 drag_margin_left = 0.1
@@ -56,22 +58,22 @@ editor/display_folded = true
 [node name="Orange7" parent="Monsters" groups=[
 "monsters",
 ] instance=ExtResource( 5 )]
-position = Vector2( 7348.49, 857.652 )
+position = Vector2( 7396.93, 842.62 )
 
 [node name="Orange8" parent="Monsters" groups=[
 "monsters",
 ] instance=ExtResource( 5 )]
-position = Vector2( 7796.32, 848.467 )
+position = Vector2( 7856.45, 840.116 )
 
 [node name="Orange9" parent="Monsters" groups=[
 "monsters",
 ] instance=ExtResource( 5 )]
-position = Vector2( 8176.61, 858.732 )
+position = Vector2( 8173.27, 843.7 )
 
 [node name="Orange10" parent="Monsters" groups=[
 "monsters",
 ] instance=ExtResource( 5 )]
-position = Vector2( 8575.63, 855.559 )
+position = Vector2( 8547.24, 840.527 )
 
 [node name="Orange11" parent="Monsters" groups=[
 "monsters",
@@ -111,12 +113,12 @@ position = Vector2( 2925.9, 857.34 )
 [node name="Orange5" parent="Monsters" groups=[
 "monsters",
 ] instance=ExtResource( 5 )]
-position = Vector2( 6266.57, 858.542 )
+position = Vector2( 6281.6, 843.51 )
 
 [node name="Orange6" parent="Monsters" groups=[
 "monsters",
 ] instance=ExtResource( 5 )]
-position = Vector2( 6751.19, 856.956 )
+position = Vector2( 6831.36, 830.233 )
 
 [node name="Buraco" type="StaticBody2D" parent="." groups=[
 "monsters",
@@ -128,3 +130,9 @@ __meta__ = {
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Buraco"]
 shape = SubResource( 1 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+volume_db = -5.0
+autoplay = true
+mix_target = 1

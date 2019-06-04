@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Craft_00.wav-6d91ef06da37a3f5af7864cf3df8fd0c.sample"
+
+[deps]
+
+source_file="res://media/opengameart/LittleRobotSoundFactory/Craft_00.wav"
+dest_files=[ "res://.import/Craft_00.wav-6d91ef06da37a3f5af7864cf3df8fd0c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

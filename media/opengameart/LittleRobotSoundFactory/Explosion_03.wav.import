@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Explosion_03.wav-5e4b11a6c44a4d60bf9881155a0a2a9f.sample"
+
+[deps]
+
+source_file="res://media/opengameart/LittleRobotSoundFactory/Explosion_03.wav"
+dest_files=[ "res://.import/Explosion_03.wav-5e4b11a6c44a4d60bf9881155a0a2a9f.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
