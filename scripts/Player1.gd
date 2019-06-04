@@ -7,9 +7,15 @@ const WALK = 300
 
 var velocity = Vector2(0,0.1)
 var jump_sound
+var die_sound
+var kill_monster_sound
 
 func _ready():
 	jump_sound = get_node("JumpSound")
+	die_sound = get_node("DieSound")
+	kill_monster_sound = get_node("KilMonsterSound")
+	if global.lives < 5:
+		die_sound.play()
 	set_physics_process(true)
 
 func _physics_process(delta):
@@ -31,7 +37,17 @@ func _physics_process(delta):
 		velocity.y += GRAVITY*delta
 	#Collisions
 	for i in get_slide_count(): #um unico movimento pode causar várias colisões
-		if get_slide_collision(i).collider.is_in_group("monsters"):
+		var collider = get_slide_collision(i).collider
+		if collider.is_in_group("instakill"):
 			global.lives -= 1
 			get_tree().reload_current_scene()
-			break # evita que o personagem morra mais de uma vez se houver mais de 1 colisão
+			break
+		elif collider.is_in_group("monsters"):
+			if self.global_position.y + 48 < collider.global_position.y:
+				kill_monster_sound.play()
+				velocity.y = JUMP
+				collider.queue_free()
+			else:
+				global.lives -= 1
+				get_tree().reload_current_scene()
+				break # evita que o personagem morra mais de uma vez se houver mais de 1 colisão
