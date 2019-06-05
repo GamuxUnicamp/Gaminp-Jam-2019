@@ -14,7 +14,7 @@ func _ready():
 	jump_sound = get_node("JumpSound")
 	die_sound = get_node("DieSound")
 	kill_monster_sound = get_node("KilMonsterSound")
-	if global.lives < 5:
+	if global.lives < 3:
 		die_sound.play()
 	set_physics_process(true)
 

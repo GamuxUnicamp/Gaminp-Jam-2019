@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/game-console(2).png-85fa88c554822e8c8595bb907c467961.stex"
+path="res://.import/portal.png-13128a6445778855e4100eb647bf85c5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/game-console(2).png"
-dest_files=[ "res://.import/game-console(2).png-85fa88c554822e8c8595bb907c467961.stex" ]
+source_file="res://media/portal.png"
+dest_files=[ "res://.import/portal.png-13128a6445778855e4100eb647bf85c5.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

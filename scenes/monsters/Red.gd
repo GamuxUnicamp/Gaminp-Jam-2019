@@ -1,0 +1,4 @@
+extends KinematicBody2D
+
+func _ready():
+	get_node("AnimationPlayer").play("walk")
