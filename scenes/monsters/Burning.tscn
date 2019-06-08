@@ -1,0 +1,35 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://scripts/Burning.gd" type="Script" id=1]
+[ext_resource path="res://media/opengameart/ansimuz/burning-ghoul/burning-ghoul1.png" type="Texture" id=2]
+[ext_resource path="res://media/opengameart/ansimuz/burning-ghoul/burning-ghoul2.png" type="Texture" id=3]
+[ext_resource path="res://media/opengameart/ansimuz/burning-ghoul/burning-ghoul3.png" type="Texture" id=4]
+[ext_resource path="res://media/opengameart/ansimuz/burning-ghoul/burning-ghoul4.png" type="Texture" id=5]
+[ext_resource path="res://media/opengameart/ansimuz/burning-ghoul/burning-ghoul5.png" type="Texture" id=6]
+[ext_resource path="res://media/opengameart/ansimuz/burning-ghoul/burning-ghoul6.png" type="Texture" id=7]
+[ext_resource path="res://media/opengameart/ansimuz/burning-ghoul/burning-ghoul7.png" type="Texture" id=8]
+[ext_resource path="res://media/opengameart/ansimuz/burning-ghoul/burning-ghoul8.png" type="Texture" id=9]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 32, 58 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "default",
+"speed": 10.0
+} ]
+
+[node name="Burning" type="KinematicBody2D"]
+script = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 0, -28 )
+scale = Vector2( 2.8, 2.9 )
+frames = SubResource( 2 )
+frame = 4
+playing = true
