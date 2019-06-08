@@ -1,11 +1,11 @@
 extends KinematicBody2D
 
 const UP = Vector2(0,-1)
-const GRAVITY = 1000
-const JUMP = -750
-const WALK = 350
+const GRAVITY = 2900
+const JUMP = -1500
+const WALK = 400
 
-var velocity = Vector2(0,0.1)
+var velocity = Vector2(0,10)
 var jump_sound
 var die_sound
 var kill_monster_sound
@@ -32,9 +32,11 @@ func _physics_process(delta):
 			velocity.y = JUMP
 			jump_sound.play()
 		else:
-			velocity.y = 0.1
+			velocity.y = 10
 	else:
 		velocity.y += GRAVITY*delta
+	if self.is_on_ceiling():
+		velocity.y = 1
 	#Collisions
 	for i in get_slide_count(): #um unico movimento pode causar várias colisões
 		var collider = get_slide_collision(i).collider

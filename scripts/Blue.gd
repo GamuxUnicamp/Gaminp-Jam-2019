@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 const UP = Vector2(0,-1)
 const JUMP = -800
-const WALK = 100
+const WALK = 120
 
 var velocity = Vector2(0,0)
 var walk_direction = -1
