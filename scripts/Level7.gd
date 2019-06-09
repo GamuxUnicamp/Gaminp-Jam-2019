@@ -5,6 +5,8 @@ var player
 
 func _ready():
 	get_node("ParallaxBackground/ParallaxLayer/LivesLabel").text = str("Lives: ", global.lives)
+	if global.lives < 3:
+		get_node("ParallaxBackground/ParallaxLayer2/background/AnimationPlayer").play("AnimVampBackground")
 	portal = get_node("Portal")
 	player = get_node("Player")
 	set_physics_process(true)

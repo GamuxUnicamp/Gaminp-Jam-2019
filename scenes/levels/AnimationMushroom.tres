@@ -1,0 +1,20 @@
+[gd_resource type="Animation" load_steps=3 format=2]
+
+[ext_resource path="res://media/mushroom_forest_background.jpg" type="Texture" id=1]
+[ext_resource path="res://media/mushroom_forest_background_glitch.jpg" type="Texture" id=2]
+
+[resource]
+resource_name = "glitch"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 1 ), ExtResource( 2 ), ExtResource( 1 ) ]
+}

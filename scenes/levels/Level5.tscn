@@ -1,24 +1,25 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://scripts/Level5.gd" type="Script" id=1]
 [ext_resource path="res://media/mushroom_forest_background.jpg" type="Texture" id=2]
-[ext_resource path="res://media/fonts/SourceCodePro-Regular.ttf" type="DynamicFontData" id=3]
-[ext_resource path="res://scenes/Level1.tres" type="TileSet" id=4]
-[ext_resource path="res://scenes/Player1.tscn" type="PackedScene" id=5]
-[ext_resource path="res://scenes/monsters/Orange.tscn" type="PackedScene" id=6]
-[ext_resource path="res://scenes/monsters/Blue.tscn" type="PackedScene" id=7]
-[ext_resource path="res://scenes/monsters/Red.tscn" type="PackedScene" id=8]
-[ext_resource path="res://media/opengameart/SubspaceAudio/Level 3.wav" type="AudioStream" id=9]
-[ext_resource path="res://scenes/Portal.tscn" type="PackedScene" id=10]
+[ext_resource path="res://scenes/levels/AnimationMushroom.tres" type="Animation" id=3]
+[ext_resource path="res://media/fonts/SourceCodePro-Regular.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://scenes/Level1.tres" type="TileSet" id=5]
+[ext_resource path="res://scenes/Player1.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/monsters/Orange.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/monsters/Blue.tscn" type="PackedScene" id=8]
+[ext_resource path="res://scenes/monsters/Red.tscn" type="PackedScene" id=9]
+[ext_resource path="res://media/opengameart/SubspaceAudio/Level 3.wav" type="AudioStream" id=10]
+[ext_resource path="res://scenes/Portal.tscn" type="PackedScene" id=11]
 
 [sub_resource type="DynamicFont" id=1]
 size = 50
-font_data = ExtResource( 3 )
+font_data = ExtResource( 4 )
 
 [sub_resource type="DynamicFont" id=2]
 size = 50
 outline_size = 1
-font_data = ExtResource( 3 )
+font_data = ExtResource( 4 )
 
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 6000, 100 )
@@ -34,6 +35,9 @@ motion_scale = Vector2( 0, 0 )
 
 [node name="background" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
 texture = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="ParallaxBackground/ParallaxLayer/background"]
+anims/AnimationMushroom = ExtResource( 3 )
 
 [node name="LevelLavel" type="Label" parent="ParallaxBackground/ParallaxLayer"]
 margin_left = -951.016
@@ -58,7 +62,7 @@ align = 2
 
 [node name="TileMap" type="TileMap" parent="."]
 scale = Vector2( 2, 2 )
-tile_set = ExtResource( 4 )
+tile_set = ExtResource( 5 )
 cell_size = Vector2( 32, 32 )
 cell_custom_transform = Transform2D( 0, 0, 0, 0, 0, 0 )
 format = 1
@@ -66,7 +70,7 @@ tile_data = PoolIntArray( -917285, 16, 0, -851749, 16, 0, -786213, 16, 0, -72067
 
 [node name="Player" parent="." groups=[
 "player",
-] instance=ExtResource( 5 )]
+] instance=ExtResource( 6 )]
 position = Vector2( 120, 520 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
@@ -84,292 +88,292 @@ editor/display_folded = true
 
 [node name="Orange7" parent="Monsters" groups=[
 "monsters",
-] instance=ExtResource( 6 )]
+] instance=ExtResource( 7 )]
 position = Vector2( 7354.4, 851.862 )
 
 [node name="Orange8" parent="Monsters" groups=[
 "monsters",
-] instance=ExtResource( 6 )]
+] instance=ExtResource( 7 )]
 position = Vector2( 7665.59, 843.052 )
 
 [node name="Orange9" parent="Monsters" groups=[
 "monsters",
-] instance=ExtResource( 6 )]
+] instance=ExtResource( 7 )]
 position = Vector2( 7947.17, 846.636 )
 
 [node name="Orange10" parent="Monsters" groups=[
 "monsters",
-] instance=ExtResource( 6 )]
+] instance=ExtResource( 7 )]
 position = Vector2( 8171.39, 840.527 )
 
 [node name="Orange11" parent="Monsters" groups=[
 "monsters",
-] instance=ExtResource( 6 )]
+] instance=ExtResource( 7 )]
 position = Vector2( 10939.1, 853.691 )
 
 [node name="Orange12" parent="Monsters" groups=[
 "monsters",
-] instance=ExtResource( 6 )]
+] instance=ExtResource( 7 )]
 position = Vector2( 11253.3, 860.593 )
 
 [node name="Orange1" parent="Monsters" groups=[
 "monsters",
-] instance=ExtResource( 6 )]
+] instance=ExtResource( 7 )]
 position = Vector2( 571.274, 855.665 )
 
 [node name="Orange2" parent="Monsters" groups=[
 "monsters",
-] instance=ExtResource( 6 )]
+] instance=ExtResource( 7 )]
 position = Vector2( 2295.11, 855.515 )
 
 [node name="Orange3" parent="Monsters" groups=[
 "monsters",
-] instance=ExtResource( 6 )]
+] instance=ExtResource( 7 )]
 position = Vector2( 2751.36, 857.896 )
 
 [node name="Orange4" parent="Monsters" groups=[
 "monsters",
-] instance=ExtResource( 6 )]
+] instance=ExtResource( 7 )]
 position = Vector2( 2925.9, 857.34 )
 
 [node name="Orange5" parent="Monsters" groups=[
 "monsters",
-] instance=ExtResource( 6 )]
+] instance=ExtResource( 7 )]
 position = Vector2( 5733.35, 847.827 )
 
 [node name="Orange13" parent="Monsters" groups=[
 "monsters",
-] instance=ExtResource( 6 )]
+] instance=ExtResource( 7 )]
 position = Vector2( 6042.01, 843.51 )
 
 [node name="Orange14" parent="Monsters" groups=[
 "monsters",
-] instance=ExtResource( 6 )]
+] instance=ExtResource( 7 )]
 position = Vector2( 6406.79, 847.827 )
 
 [node name="Orange6" parent="Monsters" groups=[
 "monsters",
-] instance=ExtResource( 6 )]
+] instance=ExtResource( 7 )]
 position = Vector2( 6734.23, 851.818 )
 
 [node name="Orange15" parent="Monsters" groups=[
 "monsters",
-] instance=ExtResource( 6 )]
+] instance=ExtResource( 7 )]
 position = Vector2( 6887.48, 853.976 )
 
 [node name="Blue" parent="Monsters" groups=[
 "monsters",
-] instance=ExtResource( 7 )]
+] instance=ExtResource( 8 )]
 position = Vector2( 902.851, 415.991 )
 
 [node name="Blue9" parent="Monsters" groups=[
 "monsters",
-] instance=ExtResource( 7 )]
+] instance=ExtResource( 8 )]
 position = Vector2( 1183.68, 397.931 )
 
 [node name="Blue10" parent="Monsters" groups=[
 "monsters",
-] instance=ExtResource( 7 )]
+] instance=ExtResource( 8 )]
 position = Vector2( 2278.91, 677.439 )
 
 [node name="Blue2" parent="Monsters" groups=[
 "monsters",
-] instance=ExtResource( 7 )]
+] instance=ExtResource( 8 )]
 position = Vector2( 2839.81, 673.922 )
 
 [node name="Blue3" parent="Monsters" groups=[
 "monsters",
-] instance=ExtResource( 7 )]
+] instance=ExtResource( 8 )]
 position = Vector2( 4324.11, 737.882 )
 
 [node name="Blue11" parent="Monsters" groups=[
 "monsters",
-] instance=ExtResource( 7 )]
+] instance=ExtResource( 8 )]
 position = Vector2( 4927.63, 676.93 )
 
 [node name="Blue12" parent="Monsters" groups=[
 "monsters",
-] instance=ExtResource( 7 )]
+] instance=ExtResource( 8 )]
 position = Vector2( 5138.92, 657.536 )
 
 [node name="Blue13" parent="Monsters" groups=[
 "monsters",
-] instance=ExtResource( 7 )]
+] instance=ExtResource( 8 )]
 position = Vector2( 5301.82, 638.142 )
 
 [node name="Blue4" parent="Monsters" groups=[
 "monsters",
-] instance=ExtResource( 7 )]
+] instance=ExtResource( 8 )]
 position = Vector2( 7845.96, 704.141 )
 
 [node name="Blue5" parent="Monsters" groups=[
 "monsters",
-] instance=ExtResource( 7 )]
+] instance=ExtResource( 8 )]
 position = Vector2( 8564.58, 383.898 )
 
 [node name="Blue14" parent="Monsters" groups=[
 "monsters",
-] instance=ExtResource( 7 )]
+] instance=ExtResource( 8 )]
 position = Vector2( 8983.29, 386.548 )
 
 [node name="Blue15" parent="Monsters" groups=[
 "monsters",
-] instance=ExtResource( 7 )]
+] instance=ExtResource( 8 )]
 position = Vector2( 9348.99, 391.849 )
 
 [node name="Blue16" parent="Monsters" groups=[
 "monsters",
-] instance=ExtResource( 7 )]
+] instance=ExtResource( 8 )]
 position = Vector2( 9828.65, 389.199 )
 
 [node name="Blue6" parent="Monsters" groups=[
 "monsters",
-] instance=ExtResource( 7 )]
+] instance=ExtResource( 8 )]
 position = Vector2( 10200, 691.874 )
 
 [node name="Blue7" parent="Monsters" groups=[
 "monsters",
-] instance=ExtResource( 7 )]
+] instance=ExtResource( 8 )]
 position = Vector2( 11125.4, 657.847 )
 
 [node name="Blue8" parent="Monsters" groups=[
 "monsters",
-] instance=ExtResource( 7 )]
+] instance=ExtResource( 8 )]
 position = Vector2( 11889, 224.538 )
 
 [node name="Blue17" parent="Monsters" groups=[
 "monsters",
-] instance=ExtResource( 7 )]
+] instance=ExtResource( 8 )]
 position = Vector2( 12128.9, 218.959 )
 
 [node name="Blue18" parent="Monsters" groups=[
 "monsters",
-] instance=ExtResource( 7 )]
+] instance=ExtResource( 8 )]
 position = Vector2( 12405.1, 227.327 )
 
 [node name="Blue19" parent="Monsters" groups=[
 "monsters",
-] instance=ExtResource( 7 )]
+] instance=ExtResource( 8 )]
 position = Vector2( 12667.3, 224.538 )
 
 [node name="Red" parent="Monsters" groups=[
 "instakill",
-] instance=ExtResource( 8 )]
+] instance=ExtResource( 9 )]
 position = Vector2( 607.632, 612.931 )
 
 [node name="Red2" parent="Monsters" groups=[
 "instakill",
-] instance=ExtResource( 8 )]
+] instance=ExtResource( 9 )]
 position = Vector2( 1337.47, 867.909 )
 
 [node name="Red3" parent="Monsters" groups=[
 "instakill",
-] instance=ExtResource( 8 )]
+] instance=ExtResource( 9 )]
 position = Vector2( 1505.04, 675.974 )
 
 [node name="Red4" parent="Monsters" groups=[
 "instakill",
-] instance=ExtResource( 8 )]
+] instance=ExtResource( 9 )]
 position = Vector2( 1960.76, 783.138 )
 rotation = -1.5708
 
 [node name="Red5" parent="Monsters" groups=[
 "instakill",
-] instance=ExtResource( 8 )]
+] instance=ExtResource( 9 )]
 position = Vector2( 3317.35, 869.851 )
 
 [node name="Red9" parent="Monsters" groups=[
 "instakill",
-] instance=ExtResource( 8 )]
+] instance=ExtResource( 9 )]
 position = Vector2( 3579.82, 873.952 )
 
 [node name="Red6" parent="Monsters" groups=[
 "instakill",
-] instance=ExtResource( 8 )]
+] instance=ExtResource( 9 )]
 position = Vector2( 4657.13, 547.852 )
 
 [node name="Red10" parent="Monsters" groups=[
 "instakill",
-] instance=ExtResource( 8 )]
+] instance=ExtResource( 9 )]
 position = Vector2( 4786.32, 867.738 )
 
 [node name="Red11" parent="Monsters" groups=[
 "instakill",
-] instance=ExtResource( 8 )]
+] instance=ExtResource( 9 )]
 position = Vector2( 5085.7, 873.889 )
 
 [node name="Red12" parent="Monsters" groups=[
 "instakill",
-] instance=ExtResource( 8 )]
+] instance=ExtResource( 9 )]
 position = Vector2( 6299.62, 615.52 )
 
 [node name="Red23" parent="Monsters" groups=[
 "instakill",
-] instance=ExtResource( 8 )]
+] instance=ExtResource( 9 )]
 position = Vector2( 5857.16, 730.275 )
 rotation = 3.14159
 
 [node name="Red7" parent="Monsters" groups=[
 "instakill",
-] instance=ExtResource( 8 )]
+] instance=ExtResource( 9 )]
 position = Vector2( 7232.91, 871.079 )
 
 [node name="Red13" parent="Monsters" groups=[
 "instakill",
-] instance=ExtResource( 8 )]
+] instance=ExtResource( 9 )]
 position = Vector2( 7519.27, 869.131 )
 
 [node name="Red14" parent="Monsters" groups=[
 "instakill",
-] instance=ExtResource( 8 )]
+] instance=ExtResource( 9 )]
 position = Vector2( 8056.05, 670.355 )
 rotation = 3.14159
 
 [node name="Red16" parent="Monsters" groups=[
 "instakill",
-] instance=ExtResource( 8 )]
+] instance=ExtResource( 9 )]
 position = Vector2( 8739.92, 739.68 )
 
 [node name="Red17" parent="Monsters" groups=[
 "instakill",
-] instance=ExtResource( 8 )]
+] instance=ExtResource( 9 )]
 position = Vector2( 9181.08, 739.68 )
 
 [node name="Red18" parent="Monsters" groups=[
 "instakill",
-] instance=ExtResource( 8 )]
+] instance=ExtResource( 9 )]
 position = Vector2( 9636.19, 741.58 )
 
 [node name="Red19" parent="Monsters" groups=[
 "instakill",
-] instance=ExtResource( 8 )]
+] instance=ExtResource( 9 )]
 position = Vector2( 10076.6, 676.024 )
 
 [node name="Red20" parent="Monsters" groups=[
 "instakill",
-] instance=ExtResource( 8 )]
+] instance=ExtResource( 9 )]
 position = Vector2( 10207.5, 805.717 )
 
 [node name="Red15" parent="Monsters" groups=[
 "instakill",
-] instance=ExtResource( 8 )]
+] instance=ExtResource( 9 )]
 position = Vector2( 8292.67, 607.189 )
 rotation = -1.5708
 
 [node name="Red8" parent="Monsters" groups=[
 "instakill",
-] instance=ExtResource( 8 )]
+] instance=ExtResource( 9 )]
 position = Vector2( 11035.4, 613.635 )
 
 [node name="Red21" parent="Monsters" groups=[
 "instakill",
-] instance=ExtResource( 8 )]
+] instance=ExtResource( 9 )]
 position = Vector2( 11034.9, 415.654 )
 rotation = 3.14159
 
 [node name="Red22" parent="Monsters" groups=[
 "instakill",
-] instance=ExtResource( 8 )]
+] instance=ExtResource( 9 )]
 position = Vector2( 11810, 677.974 )
 
 [node name="Buraco" type="StaticBody2D" parent="." groups=[
@@ -384,10 +388,10 @@ __meta__ = {
 shape = SubResource( 3 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 9 )
+stream = ExtResource( 10 )
 volume_db = -5.0
 autoplay = true
 mix_target = 1
 
-[node name="Portal" parent="." instance=ExtResource( 10 )]
+[node name="Portal" parent="." instance=ExtResource( 11 )]
 position = Vector2( 12990, 597 )

@@ -16,10 +16,10 @@ _global_script_class_icons={
 [application]
 
 config/name="Retro Dream"
-run/main_scene="res://scenes/levels/Level1.tscn"
-boot_splash/image="res://icon.png"
+run/main_scene="res://StoryIntro.tscn"
+boot_splash/image="res://media/godot.png"
 boot_splash/fullsize=false
-boot_splash/bg_color=Color( 0.482353, 0.482353, 0.482353, 1 )
+boot_splash/bg_color=Color( 0, 0, 0, 1 )
 config/icon="res://icon.png"
 
 [autoload]

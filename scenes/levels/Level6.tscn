@@ -1,20 +1,21 @@
-[gd_scene load_steps=48 format=2]
+[gd_scene load_steps=49 format=2]
 
 [ext_resource path="res://scripts/Level6.gd" type="Script" id=1]
 [ext_resource path="res://media/full_black.jpg" type="Texture" id=2]
 [ext_resource path="res://media/vampire_castle_background.jpg" type="Texture" id=3]
-[ext_resource path="res://media/fonts/SourceCodePro-Regular.ttf" type="DynamicFontData" id=4]
-[ext_resource path="res://media/opengameart/Jetrel/twilight-tiles.png" type="Texture" id=5]
-[ext_resource path="res://scenes/Player1.tscn" type="PackedScene" id=6]
-[ext_resource path="res://scenes/monsters/Ghost.tscn" type="PackedScene" id=7]
-[ext_resource path="res://media/opengameart/HydroGene/MonsterVania - Ghost Land.ogg" type="AudioStream" id=8]
-[ext_resource path="res://scenes/Portal.tscn" type="PackedScene" id=9]
+[ext_resource path="res://scenes/levels/AnimVampBackground.tres" type="Animation" id=4]
+[ext_resource path="res://media/fonts/SourceCodePro-Regular.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://media/opengameart/Jetrel/twilight-tiles.png" type="Texture" id=6]
+[ext_resource path="res://scenes/Player1.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/monsters/Ghost.tscn" type="PackedScene" id=8]
+[ext_resource path="res://media/opengameart/HydroGene/MonsterVania - Ghost Land.ogg" type="AudioStream" id=9]
+[ext_resource path="res://scenes/Portal.tscn" type="PackedScene" id=10]
 
 [sub_resource type="DynamicFont" id=1]
 size = 50
 outline_size = 1
 outline_color = Color( 0, 0, 0, 1 )
-font_data = ExtResource( 4 )
+font_data = ExtResource( 5 )
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
@@ -88,21 +89,6 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 [sub_resource type="ConvexPolygonShape2D" id=25]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 
-[sub_resource type="ConvexPolygonShape2D" id=34]
-points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
-
-[sub_resource type="ConvexPolygonShape2D" id=35]
-points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
-
-[sub_resource type="ConvexPolygonShape2D" id=36]
-points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
-
-[sub_resource type="ConvexPolygonShape2D" id=37]
-points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
-
-[sub_resource type="ConvexPolygonShape2D" id=38]
-points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
-
 [sub_resource type="ConvexPolygonShape2D" id=26]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 
@@ -121,9 +107,24 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 [sub_resource type="ConvexPolygonShape2D" id=31]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 
-[sub_resource type="TileSet" id=32]
+[sub_resource type="ConvexPolygonShape2D" id=32]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
+
+[sub_resource type="ConvexPolygonShape2D" id=33]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
+
+[sub_resource type="ConvexPolygonShape2D" id=34]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
+
+[sub_resource type="ConvexPolygonShape2D" id=35]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
+
+[sub_resource type="ConvexPolygonShape2D" id=36]
+points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
+
+[sub_resource type="TileSet" id=37]
 0/name = "twilight-tiles.png 0"
-0/texture = ExtResource( 5 )
+0/texture = ExtResource( 6 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
 0/region = Rect2( 0, 0, 16, 16 )
@@ -139,7 +140,7 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 } ]
 0/z_index = 0
 1/name = "twilight-tiles.png 1"
-1/texture = ExtResource( 5 )
+1/texture = ExtResource( 6 )
 1/tex_offset = Vector2( 0, 0 )
 1/modulate = Color( 1, 1, 1, 1 )
 1/region = Rect2( 16, 0, 16, 16 )
@@ -155,7 +156,7 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 } ]
 1/z_index = 0
 2/name = "twilight-tiles.png 2"
-2/texture = ExtResource( 5 )
+2/texture = ExtResource( 6 )
 2/tex_offset = Vector2( 0, 0 )
 2/modulate = Color( 1, 1, 1, 1 )
 2/region = Rect2( 32, 0, 16, 16 )
@@ -171,7 +172,7 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 } ]
 2/z_index = 0
 3/name = "twilight-tiles.png 3"
-3/texture = ExtResource( 5 )
+3/texture = ExtResource( 6 )
 3/tex_offset = Vector2( 0, 0 )
 3/modulate = Color( 1, 1, 1, 1 )
 3/region = Rect2( 64, 16, 16, 16 )
@@ -187,7 +188,7 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 } ]
 3/z_index = 0
 4/name = "twilight-tiles.png 4"
-4/texture = ExtResource( 5 )
+4/texture = ExtResource( 6 )
 4/tex_offset = Vector2( 0, 0 )
 4/modulate = Color( 1, 1, 1, 1 )
 4/region = Rect2( 80, 16, 16, 16 )
@@ -198,12 +199,12 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 26 ),
+"shape": SubResource( 31 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 4/z_index = 0
 5/name = "twilight-tiles.png 5"
-5/texture = ExtResource( 5 )
+5/texture = ExtResource( 6 )
 5/tex_offset = Vector2( 0, 0 )
 5/modulate = Color( 1, 1, 1, 1 )
 5/region = Rect2( 96, 16, 16, 16 )
@@ -214,12 +215,12 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 27 ),
+"shape": SubResource( 32 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 5/z_index = 0
 6/name = "twilight-tiles.png 6"
-6/texture = ExtResource( 5 )
+6/texture = ExtResource( 6 )
 6/tex_offset = Vector2( 0, 0 )
 6/modulate = Color( 1, 1, 1, 1 )
 6/region = Rect2( 112, 0, 16, 16 )
@@ -230,12 +231,12 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 28 ),
+"shape": SubResource( 33 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 6/z_index = 0
 7/name = "twilight-tiles.png 7"
-7/texture = ExtResource( 5 )
+7/texture = ExtResource( 6 )
 7/tex_offset = Vector2( 0, 0 )
 7/modulate = Color( 1, 1, 1, 1 )
 7/region = Rect2( 128, 0, 16, 16 )
@@ -246,12 +247,12 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 29 ),
+"shape": SubResource( 34 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 7/z_index = 0
 8/name = "twilight-tiles.png 8"
-8/texture = ExtResource( 5 )
+8/texture = ExtResource( 6 )
 8/tex_offset = Vector2( 0, 0 )
 8/modulate = Color( 1, 1, 1, 1 )
 8/region = Rect2( 144, 0, 16, 16 )
@@ -262,12 +263,12 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 30 ),
+"shape": SubResource( 35 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 8/z_index = 0
 9/name = "twilight-tiles.png 9"
-9/texture = ExtResource( 5 )
+9/texture = ExtResource( 6 )
 9/tex_offset = Vector2( 0, 0 )
 9/modulate = Color( 1, 1, 1, 1 )
 9/region = Rect2( 112, 16, 16, 16 )
@@ -278,12 +279,12 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 31 ),
+"shape": SubResource( 36 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 9/z_index = 0
 10/name = "twilight-tiles.png 10"
-10/texture = ExtResource( 5 )
+10/texture = ExtResource( 6 )
 10/tex_offset = Vector2( 0, 0 )
 10/modulate = Color( 1, 1, 1, 1 )
 10/region = Rect2( 128, 16, 16, 16 )
@@ -299,7 +300,7 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 } ]
 10/z_index = 0
 11/name = "twilight-tiles.png 11"
-11/texture = ExtResource( 5 )
+11/texture = ExtResource( 6 )
 11/tex_offset = Vector2( 0, 0 )
 11/modulate = Color( 1, 1, 1, 1 )
 11/region = Rect2( 144, 16, 16, 16 )
@@ -315,7 +316,7 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 } ]
 11/z_index = 0
 12/name = "twilight-tiles.png 12"
-12/texture = ExtResource( 5 )
+12/texture = ExtResource( 6 )
 12/tex_offset = Vector2( 0, 0 )
 12/modulate = Color( 1, 1, 1, 1 )
 12/region = Rect2( 112, 32, 16, 16 )
@@ -331,7 +332,7 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 } ]
 12/z_index = 0
 13/name = "twilight-tiles.png 13"
-13/texture = ExtResource( 5 )
+13/texture = ExtResource( 6 )
 13/tex_offset = Vector2( 0, 0 )
 13/modulate = Color( 1, 1, 1, 1 )
 13/region = Rect2( 128, 32, 16, 16 )
@@ -347,7 +348,7 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 } ]
 13/z_index = 0
 14/name = "twilight-tiles.png 14"
-14/texture = ExtResource( 5 )
+14/texture = ExtResource( 6 )
 14/tex_offset = Vector2( 0, 0 )
 14/modulate = Color( 1, 1, 1, 1 )
 14/region = Rect2( 144, 32, 16, 16 )
@@ -363,7 +364,7 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 } ]
 14/z_index = 0
 15/name = "twilight-tiles.png 15"
-15/texture = ExtResource( 5 )
+15/texture = ExtResource( 6 )
 15/tex_offset = Vector2( 0, 0 )
 15/modulate = Color( 1, 1, 1, 1 )
 15/region = Rect2( 160, 0, 16, 16 )
@@ -379,7 +380,7 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 } ]
 15/z_index = 0
 16/name = "twilight-tiles.png 16"
-16/texture = ExtResource( 5 )
+16/texture = ExtResource( 6 )
 16/tex_offset = Vector2( 0, 0 )
 16/modulate = Color( 1, 1, 1, 1 )
 16/region = Rect2( 160, 16, 16, 16 )
@@ -395,7 +396,7 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 } ]
 16/z_index = 0
 17/name = "twilight-tiles.png 17"
-17/texture = ExtResource( 5 )
+17/texture = ExtResource( 6 )
 17/tex_offset = Vector2( 0, 0 )
 17/modulate = Color( 1, 1, 1, 1 )
 17/region = Rect2( 160, 32, 16, 16 )
@@ -411,7 +412,7 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 } ]
 17/z_index = 0
 18/name = "twilight-tiles.png 18"
-18/texture = ExtResource( 5 )
+18/texture = ExtResource( 6 )
 18/tex_offset = Vector2( 0, 0 )
 18/modulate = Color( 1, 1, 1, 1 )
 18/region = Rect2( 16, 64, 80, 112 )
@@ -421,7 +422,7 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 18/shapes = [  ]
 18/z_index = 0
 19/name = "twilight-tiles.png 19"
-19/texture = ExtResource( 5 )
+19/texture = ExtResource( 6 )
 19/tex_offset = Vector2( 0, 0 )
 19/modulate = Color( 1, 1, 1, 1 )
 19/region = Rect2( 112, 96, 16, 16 )
@@ -437,7 +438,7 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 } ]
 19/z_index = 0
 20/name = "twilight-tiles.png 20"
-20/texture = ExtResource( 5 )
+20/texture = ExtResource( 6 )
 20/tex_offset = Vector2( 0, 0 )
 20/modulate = Color( 1, 1, 1, 1 )
 20/region = Rect2( 128, 96, 16, 16 )
@@ -453,7 +454,7 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 } ]
 20/z_index = 0
 21/name = "twilight-tiles.png 21"
-21/texture = ExtResource( 5 )
+21/texture = ExtResource( 6 )
 21/tex_offset = Vector2( 0, 0 )
 21/modulate = Color( 1, 1, 1, 1 )
 21/region = Rect2( 144, 96, 16, 16 )
@@ -469,7 +470,7 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 } ]
 21/z_index = 0
 22/name = "twilight-tiles.png 22"
-22/texture = ExtResource( 5 )
+22/texture = ExtResource( 6 )
 22/tex_offset = Vector2( 0, 0 )
 22/modulate = Color( 1, 1, 1, 1 )
 22/region = Rect2( 112, 112, 16, 16 )
@@ -485,7 +486,7 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 } ]
 22/z_index = 0
 23/name = "twilight-tiles.png 23"
-23/texture = ExtResource( 5 )
+23/texture = ExtResource( 6 )
 23/tex_offset = Vector2( 0, 0 )
 23/modulate = Color( 1, 1, 1, 1 )
 23/region = Rect2( 128, 112, 16, 16 )
@@ -501,7 +502,7 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 } ]
 23/z_index = 0
 24/name = "twilight-tiles.png 24"
-24/texture = ExtResource( 5 )
+24/texture = ExtResource( 6 )
 24/tex_offset = Vector2( 0, 0 )
 24/modulate = Color( 1, 1, 1, 1 )
 24/region = Rect2( 144, 112, 16, 16 )
@@ -517,7 +518,7 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 } ]
 24/z_index = 0
 25/name = "twilight-tiles.png 25"
-25/texture = ExtResource( 5 )
+25/texture = ExtResource( 6 )
 25/tex_offset = Vector2( 0, 0 )
 25/modulate = Color( 1, 1, 1, 1 )
 25/region = Rect2( 112, 128, 16, 16 )
@@ -533,7 +534,7 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 } ]
 25/z_index = 0
 26/name = "twilight-tiles.png 26"
-26/texture = ExtResource( 5 )
+26/texture = ExtResource( 6 )
 26/tex_offset = Vector2( 0, 0 )
 26/modulate = Color( 1, 1, 1, 1 )
 26/region = Rect2( 128, 128, 16, 16 )
@@ -549,7 +550,7 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 } ]
 26/z_index = 0
 27/name = "twilight-tiles.png 27"
-27/texture = ExtResource( 5 )
+27/texture = ExtResource( 6 )
 27/tex_offset = Vector2( 0, 0 )
 27/modulate = Color( 1, 1, 1, 1 )
 27/region = Rect2( 144, 128, 16, 16 )
@@ -565,7 +566,7 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 } ]
 27/z_index = 0
 28/name = "twilight-tiles.png 28"
-28/texture = ExtResource( 5 )
+28/texture = ExtResource( 6 )
 28/tex_offset = Vector2( 0, 0 )
 28/modulate = Color( 1, 1, 1, 1 )
 28/region = Rect2( 160, 96, 16, 16 )
@@ -581,7 +582,7 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 } ]
 28/z_index = 0
 29/name = "twilight-tiles.png 29"
-29/texture = ExtResource( 5 )
+29/texture = ExtResource( 6 )
 29/tex_offset = Vector2( 0, 0 )
 29/modulate = Color( 1, 1, 1, 1 )
 29/region = Rect2( 160, 112, 16, 16 )
@@ -597,7 +598,7 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 } ]
 29/z_index = 0
 30/name = "twilight-tiles.png 30"
-30/texture = ExtResource( 5 )
+30/texture = ExtResource( 6 )
 30/tex_offset = Vector2( 0, 0 )
 30/modulate = Color( 1, 1, 1, 1 )
 30/region = Rect2( 160, 128, 16, 16 )
@@ -613,7 +614,7 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 } ]
 30/z_index = 0
 31/name = "twilight-tiles.png 31"
-31/texture = ExtResource( 5 )
+31/texture = ExtResource( 6 )
 31/tex_offset = Vector2( 0, 0 )
 31/modulate = Color( 1, 1, 1, 1 )
 31/region = Rect2( 32, 192, 16, 16 )
@@ -623,7 +624,7 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 31/shapes = [  ]
 31/z_index = 0
 32/name = "twilight-tiles.png 32"
-32/texture = ExtResource( 5 )
+32/texture = ExtResource( 6 )
 32/tex_offset = Vector2( 0, 0 )
 32/modulate = Color( 1, 1, 1, 1 )
 32/region = Rect2( 16, 224, 16, 16 )
@@ -633,7 +634,7 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 32/shapes = [  ]
 32/z_index = 0
 33/name = "twilight-tiles.png 33"
-33/texture = ExtResource( 5 )
+33/texture = ExtResource( 6 )
 33/tex_offset = Vector2( 0, 0 )
 33/modulate = Color( 1, 1, 1, 1 )
 33/region = Rect2( 32, 224, 16, 16 )
@@ -643,7 +644,7 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 33/shapes = [  ]
 33/z_index = 0
 34/name = "twilight-tiles.png 34"
-34/texture = ExtResource( 5 )
+34/texture = ExtResource( 6 )
 34/tex_offset = Vector2( 0, 0 )
 34/modulate = Color( 1, 1, 1, 1 )
 34/region = Rect2( 48, 224, 16, 16 )
@@ -653,7 +654,7 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 34/shapes = [  ]
 34/z_index = 0
 35/name = "twilight-tiles.png 35"
-35/texture = ExtResource( 5 )
+35/texture = ExtResource( 6 )
 35/tex_offset = Vector2( 0, 0 )
 35/modulate = Color( 1, 1, 1, 1 )
 35/region = Rect2( 144, 160, 16, 16 )
@@ -664,12 +665,12 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 34 ),
+"shape": SubResource( 26 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 35/z_index = 0
 36/name = "twilight-tiles.png 36"
-36/texture = ExtResource( 5 )
+36/texture = ExtResource( 6 )
 36/tex_offset = Vector2( 0, 0 )
 36/modulate = Color( 1, 1, 1, 1 )
 36/region = Rect2( 160, 160, 16, 16 )
@@ -680,12 +681,12 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 35 ),
+"shape": SubResource( 27 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 36/z_index = 0
 37/name = "twilight-tiles.png 37"
-37/texture = ExtResource( 5 )
+37/texture = ExtResource( 6 )
 37/tex_offset = Vector2( 0, 0 )
 37/modulate = Color( 1, 1, 1, 1 )
 37/region = Rect2( 144, 176, 16, 16 )
@@ -696,12 +697,12 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 36 ),
+"shape": SubResource( 28 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 37/z_index = 0
 38/name = "twilight-tiles.png 38"
-38/texture = ExtResource( 5 )
+38/texture = ExtResource( 6 )
 38/tex_offset = Vector2( 0, 0 )
 38/modulate = Color( 1, 1, 1, 1 )
 38/region = Rect2( 160, 176, 16, 16 )
@@ -712,12 +713,12 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 37 ),
+"shape": SubResource( 29 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 38/z_index = 0
 39/name = "twilight-tiles.png 39"
-39/texture = ExtResource( 5 )
+39/texture = ExtResource( 6 )
 39/tex_offset = Vector2( 0, 0 )
 39/modulate = Color( 1, 1, 1, 1 )
 39/region = Rect2( 160, 144, 16, 16 )
@@ -728,12 +729,12 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 38 ),
+"shape": SubResource( 30 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 39/z_index = 0
 
-[sub_resource type="RectangleShape2D" id=33]
+[sub_resource type="RectangleShape2D" id=38]
 extents = Vector2( 1000, 100 )
 
 [node name="Node2D" type="Node2D"]
@@ -755,6 +756,9 @@ motion_mirroring = Vector2( 1920, 0 )
 position = Vector2( -420, -270 )
 texture = ExtResource( 3 )
 centered = false
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="ParallaxBackground/ParallaxLayer2/background"]
+anims/AnimVampBackground = ExtResource( 4 )
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
 motion_scale = Vector2( 0, 0 )
@@ -782,15 +786,15 @@ text = "Level 2-1"
 
 [node name="TileMap" type="TileMap" parent="."]
 scale = Vector2( 4, 4 )
-tile_set = SubResource( 32 )
+tile_set = SubResource( 37 )
 cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( -262041, 15, 0, -262040, 15, 0, -262000, 15, 0, -196505, 15, 0, -196504, 15, 0, -196464, 15, 0, -130969, 15, 0, -130968, 15, 0, -130928, 15, 0, -65433, 15, 0, -65432, 15, 0, -65392, 15, 0, 65535, 13, 0, 103, 16, 0, 104, 16, 0, 144, 15, 0, 190, 22, 0, 191, 23, 0, 131071, 13, 0, 65639, 16, 0, 65640, 16, 0, 65680, 15, 0, 65726, 22, 0, 65727, 23, 0, 196607, 13, 0, 131175, 15, 0, 131176, 15, 0, 131216, 15, 0, 131262, 22, 0, 131263, 23, 0, 262143, 13, 0, 196711, 15, 0, 196712, 15, 0, 196798, 22, 0, 196799, 23, 0, 327679, 13, 0, 262247, 15, 0, 262248, 15, 0, 262334, 22, 0, 262335, 23, 0, 393215, 13, 0, 327783, 15, 0, 327784, 15, 0, 327870, 22, 0, 327871, 23, 0, 458751, 13, 0, 393264, 1, 0, 393265, -1073741796, 0, 393266, -1610612707, 0, 393267, -1610612707, 0, 393268, -1610612707, 0, 393269, -1610612707, 0, 393270, -1610612707, 0, 393271, -1610612707, 0, 393272, -1610612707, 0, 393273, -1610612707, 0, 393274, -1610612707, 0, 393275, -1610612708, 0, 393276, 1, 0, 393306, 1, 0, 393307, -1073741796, 0, 393308, -1073741795, 0, 393309, -1073741795, 0, 393310, -1073741795, 0, 393311, -1073741795, 0, 393312, -1073741795, 0, 393313, -1073741795, 0, 393314, -1073741795, 0, 393315, -1073741795, 0, 393316, -1073741795, 0, 393317, -1073741795, 0, 393318, -1073741795, 0, 393319, -1073741795, 0, 393320, -1073741795, 0, 393321, -1073741795, 0, 393322, -1073741795, 0, 393323, -1073741795, 0, 393324, -1073741795, 0, 393325, -1073741795, 0, 393326, -1073741795, 0, 393327, -1610612708, 0, 393354, -1073741796, 0, 393355, -1073741795, 0, 393356, -1073741795, 0, 393357, -1073741795, 0, 393358, -1073741795, 0, 393359, -1073741795, 0, 393360, -1073741795, 0, 393361, -1073741795, 0, 393362, -1073741795, 0, 393363, -1073741795, 0, 393364, -1073741795, 0, 393365, -1073741795, 0, 393366, -1073741795, 0, 393367, -1073741794, 0, 393368, 1, 0, 393406, 22, 0, 393407, 23, 0, 524287, 13, 0, 458799, 1, 0, 458813, 1, 0, 458841, 1, 0, 458855, 16, 0, 458856, 16, 0, 458875, 15, 0, 458876, 15, 0, 458877, 15, 0, 458878, 15, 0, 458879, 15, 0, 458880, 15, 0, 458881, -1073741796, 0, 458882, -1073741794, 0, 458896, 15, 0, 458905, 1, 0, 458942, 22, 0, 458943, 23, 0, 589823, 13, 0, 524334, 1, 0, 524350, 1, 0, 524376, 1, 0, 524391, 16, 0, 524392, 16, 0, 524400, -1073741796, 0, 524401, -1073741795, 0, 524402, -1073741795, 0, 524403, -1610612708, 0, 524404, 1, 0, 524411, 16, 0, 524412, 16, 0, 524413, 16, 0, 524414, 16, 0, 524415, 16, 0, 524416, 16, 0, 524419, -1073741796, 0, 524420, -1073741795, 0, 524421, -1073741794, 0, 524422, 1, 0, 524432, 15, 0, 524441, -1073741796, 0, 524442, -1073741795, 0, 524443, -1073741795, 0, 524444, -1073741795, 0, 524445, -1073741795, 0, 524446, -1073741795, 0, 524447, -1073741795, 0, 524448, -1073741794, 0, 524449, 1, 0, 524478, 22, 0, 524479, 23, 0, 655359, 13, 0, 589867, 1, 0, 589868, -1073741796, 0, 589869, -1610612707, 0, 589870, -1610612708, 0, 589887, -1073741796, 0, 589888, -1073741795, 0, 589889, -1073741795, 0, 589890, -1073741795, 0, 589891, -1610612708, 0, 589911, 1, 0, 589927, 16, 0, 589928, 16, 0, 589941, 1, 0, 589947, 16, 0, 589948, 16, 0, 589949, 16, 0, 589950, 16, 0, 589951, 16, 0, 589952, 16, 0, 589959, 1, 0, 589968, 15, 0, 589986, 1, 0, 590014, 22, 0, 590015, 23, 0, 720895, 13, 0, 655402, 1, 0, 655446, 1, 0, 655463, 16, 0, 655464, 16, 0, 655478, 1, 0, 655483, 16, 0, 655484, 16, 0, 655485, 16, 0, 655486, 16, 0, 655487, 16, 0, 655488, 16, 0, 655496, 1, 0, 655504, 15, 0, 655523, 1, 0, 655546, 1, 0, 655547, -1073741796, 0, 655548, -1073741795, 0, 655549, -1073741794, 0, 655550, 22, 0, 655551, 23, 0, 786431, 13, 0, 720937, 1, 0, 720981, 1, 0, 720999, 16, 0, 721000, 16, 0, 721019, 16, 0, 721020, 16, 0, 721021, 16, 0, 721022, 16, 0, 721023, 16, 0, 721024, 16, 0, 721040, 15, 0, 721060, 1, 0, 721081, 1, 0, 721086, 22, 0, 721087, 23, 0, 851967, 13, 0, 786472, 1, 0, 786516, 1, 0, 786535, 16, 0, 786536, 16, 0, 786555, 16, 0, 786556, 16, 0, 786557, 16, 0, 786558, 16, 0, 786559, 16, 0, 786560, 16, 0, 786576, 15, 0, 786597, 1, 0, 786616, 39, 0, 786622, 22, 0, 786623, 23, 0, 917503, 13, 0, 852007, 1, 0, 852051, 1, 0, 852071, 16, 0, 852072, 16, 0, 852091, 16, 0, 852092, 16, 0, 852093, 16, 0, 852094, 16, 0, 852095, 16, 0, 852096, 16, 0, 852112, 15, 0, 852134, 1, 0, 852158, 22, 0, 852159, 23, 0, 983039, 13, 0, 917504, 20, 0, 917505, 20, 0, 917506, 20, 0, 917507, 20, 0, 917508, 20, 0, 917509, 20, 0, 917510, 20, 0, 917511, 20, 0, 917512, 20, 0, 917513, 20, 0, 917514, 20, 0, 917515, 20, 0, 917516, 20, 0, 917517, 20, 0, 917518, 20, 0, 917519, 20, 0, 917520, 20, 0, 917521, 20, 0, 917522, 20, 0, 917523, 20, 0, 917524, 20, 0, 917525, 20, 0, 917526, 20, 0, 917527, 20, 0, 917528, 20, 0, 917529, 20, 0, 917530, 20, 0, 917531, 20, 0, 917532, 20, 0, 917533, 20, 0, 917534, 20, 0, 917535, 20, 0, 917536, 20, 0, 917537, 20, 0, 917538, 20, 0, 917539, 20, 0, 917540, 20, 0, 917541, 20, 0, 917542, 20, 0, 917543, 20, 0, 917544, 20, 0, 917545, 20, 0, 917546, 20, 0, 917547, 20, 0, 917548, 20, 0, 917549, 20, 0, 917550, 20, 0, 917551, 20, 0, 917552, 20, 0, 917553, 20, 0, 917554, 20, 0, 917555, 20, 0, 917556, 20, 0, 917557, 20, 0, 917558, 20, 0, 917559, 20, 0, 917560, 20, 0, 917561, 20, 0, 917562, 20, 0, 917563, 20, 0, 917564, 20, 0, 917565, 20, 0, 917566, 20, 0, 917567, 20, 0, 917568, 20, 0, 917569, 20, 0, 917570, 20, 0, 917571, 20, 0, 917572, 20, 0, 917573, 20, 0, 917574, 20, 0, 917575, 20, 0, 917576, 20, 0, 917577, 20, 0, 917578, 20, 0, 917579, 20, 0, 917580, 20, 0, 917581, 20, 0, 917582, 20, 0, 917583, 20, 0, 917584, 20, 0, 917585, 20, 0, 917586, 20, 0, 917587, 20, 0, 917588, 20, 0, 917589, 20, 0, 917590, 20, 0, 917591, 20, 0, 917592, 20, 0, 917593, 20, 0, 917594, 20, 0, 917595, 20, 0, 917596, 20, 0, 917597, 20, 0, 917598, 20, 0, 917599, 20, 0, 917600, 20, 0, 917601, 20, 0, 917602, 20, 0, 917603, 20, 0, 917604, 20, 0, 917605, 20, 0, 917606, 20, 0, 917607, 20, 0, 917608, 20, 0, 917609, 20, 0, 917610, 20, 0, 917611, 20, 0, 917612, 20, 0, 917613, 21, 0, 917614, 1, 0, 917620, 19, 0, 917621, 20, 0, 917622, 20, 0, 917623, 20, 0, 917624, 20, 0, 917625, 20, 0, 917626, 20, 0, 917627, 16, 0, 917628, 16, 0, 917629, 16, 0, 917630, 16, 0, 917631, 16, 0, 917632, 16, 0, 917633, 20, 0, 917634, 20, 0, 917635, 21, 0, 917636, 1, 0, 917642, 19, 0, 917643, 20, 0, 917644, 20, 0, 917645, 20, 0, 917646, 20, 0, 917647, 20, 0, 917648, 20, 0, 917649, 20, 0, 917650, 20, 0, 917651, 20, 0, 917652, 20, 0, 917653, 20, 0, 917654, 20, 0, 917655, 20, 0, 917656, 20, 0, 917657, 20, 0, 917658, 20, 0, 917659, 20, 0, 917660, 20, 0, 917661, 20, 0, 917662, 20, 0, 917663, 20, 0, 917664, 20, 0, 917665, 20, 0, 917666, 20, 0, 917667, 20, 0, 917668, 20, 0, 917669, 20, 0, 917670, 20, 0, 917671, 20, 0, 917672, 20, 0, 917673, 20, 0, 917674, 20, 0, 917675, 20, 0, 917676, 20, 0, 917677, 20, 0, 917678, 20, 0, 917679, 20, 0, 917680, 20, 0, 917681, 20, 0, 917682, 20, 0, 917683, 20, 0, 917684, 20, 0, 917685, 20, 0, 917686, 20, 0, 917687, 20, 0, 917688, 20, 0, 917689, 20, 0, 917690, 20, 0, 917691, 20, 0, 917692, 20, 0, 917693, 20, 0, 917694, 38, 0, 917695, 23, 0, 1048575, 13, 0, 983040, 23, 0, 983041, 23, 0, 983042, 23, 0, 983043, 23, 0, 983044, 23, 0, 983045, 23, 0, 983046, 23, 0, 983047, 23, 0, 983048, 23, 0, 983049, 23, 0, 983050, 23, 0, 983051, 23, 0, 983052, 23, 0, 983053, 23, 0, 983054, 23, 0, 983055, 23, 0, 983056, 23, 0, 983057, 23, 0, 983058, 23, 0, 983059, 23, 0, 983060, 23, 0, 983061, 23, 0, 983062, 23, 0, 983063, 23, 0, 983064, 23, 0, 983065, 23, 0, 983066, 23, 0, 983067, 23, 0, 983068, 23, 0, 983069, 23, 0, 983070, 23, 0, 983071, 23, 0, 983072, 23, 0, 983073, 23, 0, 983074, 23, 0, 983075, 23, 0, 983076, 23, 0, 983077, 23, 0, 983078, 23, 0, 983079, 23, 0, 983080, 23, 0, 983081, 23, 0, 983082, 23, 0, 983083, 23, 0, 983084, 23, 0, 983085, 23, 0, 983086, 23, 0, 983087, 23, 0, 983088, 23, 0, 983089, 23, 0, 983090, 23, 0, 983091, 23, 0, 983092, 23, 0, 983093, 23, 0, 983094, 23, 0, 983095, 23, 0, 983096, 23, 0, 983097, 23, 0, 983098, 23, 0, 983099, 23, 0, 983100, 23, 0, 983101, 23, 0, 983102, 23, 0, 983103, 23, 0, 983104, 23, 0, 983105, 23, 0, 983106, 23, 0, 983107, 23, 0, 983108, 23, 0, 983109, 23, 0, 983110, 23, 0, 983111, 23, 0, 983112, 23, 0, 983113, 23, 0, 983114, 23, 0, 983115, 23, 0, 983116, 23, 0, 983117, 23, 0, 983118, 23, 0, 983119, 23, 0, 983120, 23, 0, 983121, 23, 0, 983122, 23, 0, 983123, 23, 0, 983124, 23, 0, 983125, 23, 0, 983126, 23, 0, 983127, 23, 0, 983128, 23, 0, 983129, 23, 0, 983130, 23, 0, 983131, 23, 0, 983132, 23, 0, 983133, 23, 0, 983134, 23, 0, 983135, 23, 0, 983136, 23, 0, 983137, 23, 0, 983138, 23, 0, 983139, 23, 0, 983140, 23, 0, 983141, 23, 0, 983142, 23, 0, 983143, 23, 0, 983144, 23, 0, 983145, 23, 0, 983146, 23, 0, 983147, 23, 0, 983148, 23, 0, 983149, 24, 0, 983151, 1, 0, 983156, 22, 0, 983157, 23, 0, 983158, 23, 0, 983159, 23, 0, 983160, 23, 0, 983161, 23, 0, 983162, 23, 0, 983163, 16, 0, 983164, 16, 0, 983165, 16, 0, 983166, 16, 0, 983167, 16, 0, 983168, 16, 0, 983169, 23, 0, 983170, 23, 0, 983171, 24, 0, 983173, 1, 0, 983178, 22, 0, 983179, 23, 0, 983180, 23, 0, 983181, 23, 0, 983182, 23, 0, 983183, 23, 0, 983184, 23, 0, 983185, 23, 0, 983186, 23, 0, 983187, 23, 0, 983188, 23, 0, 983189, 23, 0, 983190, 23, 0, 983191, 23, 0, 983192, 23, 0, 983193, 23, 0, 983194, 23, 0, 983195, 23, 0, 983196, 23, 0, 983197, 23, 0, 983198, 23, 0, 983199, 23, 0, 983200, 23, 0, 983201, 23, 0, 983202, 23, 0, 983203, 23, 0, 983204, 23, 0, 983205, 23, 0, 983206, 23, 0, 983207, 23, 0, 983208, 23, 0, 983209, 23, 0, 983210, 23, 0, 983211, 23, 0, 983212, 23, 0, 983213, 23, 0, 983214, 23, 0, 983215, 23, 0, 983216, 23, 0, 983217, 23, 0, 983218, 23, 0, 983219, 23, 0, 983220, 23, 0, 983221, 23, 0, 983222, 23, 0, 983223, 23, 0, 983224, 23, 0, 983225, 23, 0, 983226, 23, 0, 983227, 23, 0, 983228, 23, 0, 983229, 23, 0, 983230, 23, 0, 983231, 23, 0, 1114111, 13, 0, 1048576, 23, 0, 1048577, 23, 0, 1048578, 23, 0, 1048579, 23, 0, 1048580, 23, 0, 1048581, 23, 0, 1048582, 23, 0, 1048583, 23, 0, 1048584, 23, 0, 1048585, 23, 0, 1048586, 23, 0, 1048587, 23, 0, 1048588, 23, 0, 1048589, 23, 0, 1048590, 23, 0, 1048591, 23, 0, 1048592, 23, 0, 1048593, 23, 0, 1048594, 23, 0, 1048595, 23, 0, 1048596, 23, 0, 1048597, 23, 0, 1048598, 23, 0, 1048599, 23, 0, 1048600, 23, 0, 1048601, 23, 0, 1048602, 23, 0, 1048603, 23, 0, 1048604, 23, 0, 1048605, 23, 0, 1048606, 23, 0, 1048607, 23, 0, 1048608, 23, 0, 1048609, 23, 0, 1048610, 23, 0, 1048611, 23, 0, 1048612, 23, 0, 1048613, 23, 0, 1048614, 23, 0, 1048615, 23, 0, 1048616, 23, 0, 1048617, 23, 0, 1048618, 23, 0, 1048619, 23, 0, 1048620, 23, 0, 1048621, 23, 0, 1048622, 23, 0, 1048623, 23, 0, 1048624, 23, 0, 1048625, 23, 0, 1048626, 23, 0, 1048627, 23, 0, 1048628, 23, 0, 1048629, 23, 0, 1048630, 23, 0, 1048631, 23, 0, 1048632, 23, 0, 1048633, 23, 0, 1048634, 23, 0, 1048635, 23, 0, 1048636, 23, 0, 1048637, 23, 0, 1048638, 23, 0, 1048639, 23, 0, 1048640, 23, 0, 1048641, 23, 0, 1048642, 23, 0, 1048643, 23, 0, 1048644, 23, 0, 1048645, 23, 0, 1048646, 23, 0, 1048647, 23, 0, 1048648, 23, 0, 1048649, 23, 0, 1048650, 23, 0, 1048651, 23, 0, 1048652, 23, 0, 1048653, 23, 0, 1048654, 23, 0, 1048655, 23, 0, 1048656, 23, 0, 1048657, 23, 0, 1048658, 23, 0, 1048659, 23, 0, 1048660, 23, 0, 1048661, 23, 0, 1048662, 23, 0, 1048663, 23, 0, 1048664, 23, 0, 1048665, 23, 0, 1048666, 23, 0, 1048667, 23, 0, 1048668, 23, 0, 1048669, 23, 0, 1048670, 23, 0, 1048671, 23, 0, 1048672, 23, 0, 1048673, 23, 0, 1048674, 23, 0, 1048675, 23, 0, 1048676, 23, 0, 1048677, 23, 0, 1048678, 23, 0, 1048679, 23, 0, 1048680, 23, 0, 1048681, 23, 0, 1048682, 23, 0, 1048683, 23, 0, 1048684, 23, 0, 1048685, 24, 0, 1048688, 1, 0, 1048689, 32, 0, 1048690, 33, 0, 1048691, 34, 0, 1048692, 22, 0, 1048693, 23, 0, 1048694, 23, 0, 1048695, 23, 0, 1048696, 23, 0, 1048697, 23, 0, 1048698, 23, 0, 1048699, 16, 0, 1048700, 16, 0, 1048701, 16, 0, 1048702, 16, 0, 1048703, 16, 0, 1048704, 16, 0, 1048705, 23, 0, 1048706, 23, 0, 1048707, 24, 0, 1048710, 1, 0, 1048711, 32, 0, 1048712, 33, 0, 1048713, 34, 0, 1048714, 22, 0, 1048715, 23, 0, 1048716, 23, 0, 1048717, 23, 0, 1048718, 23, 0, 1048719, 23, 0, 1048720, 23, 0, 1048721, 23, 0, 1048722, 23, 0, 1048723, 23, 0, 1048724, 23, 0, 1048725, 23, 0, 1048726, 23, 0, 1048727, 23, 0, 1048728, 23, 0, 1048729, 23, 0, 1048730, 23, 0, 1048731, 23, 0, 1048732, 23, 0, 1048733, 23, 0, 1048734, 23, 0, 1048735, 23, 0, 1048736, 23, 0, 1048737, 23, 0, 1048738, 23, 0, 1048739, 23, 0, 1048740, 23, 0, 1048741, 23, 0, 1048742, 23, 0, 1048743, 23, 0, 1048744, 23, 0, 1048745, 23, 0, 1048746, 23, 0, 1048747, 23, 0, 1048748, 23, 0, 1048749, 23, 0, 1048750, 23, 0, 1048751, 23, 0, 1048752, 23, 0, 1048753, 23, 0, 1048754, 23, 0, 1048755, 23, 0, 1048756, 23, 0, 1048757, 23, 0, 1048758, 23, 0, 1048759, 23, 0, 1048760, 23, 0, 1048761, 23, 0, 1048762, 23, 0, 1048763, 23, 0, 1048764, 23, 0, 1048765, 23, 0, 1048766, 23, 0, 1048767, 23, 0, 1114221, 23, 0, 1114222, 23, 0, 1114223, 23, 0, 1114224, 23, 0, 1114225, 23, 0, 1114226, 23, 0, 1114227, 23, 0, 1114228, 23, 0, 1114243, 23, 0, 1114244, 23, 0, 1114245, 23, 0, 1114246, 23, 0, 1114247, 23, 0, 1114248, 23, 0, 1114249, 23, 0, 1114250, 23, 0, 1638452, 0, 0 )
 
 [node name="Player" parent="." groups=[
 "player",
-] instance=ExtResource( 6 )]
-position = Vector2( 1090, 790 )
+] instance=ExtResource( 7 )]
+position = Vector2( 970, 830 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2( -120, 0 )
@@ -805,25 +809,25 @@ drag_margin_right = 0.1
 
 [node name="Monsters" type="Node" parent="."]
 
-[node name="Ghost_0" parent="Monsters" instance=ExtResource( 7 )]
+[node name="Ghost_0" parent="Monsters" instance=ExtResource( 8 )]
 position = Vector2( 214.5, 800 )
 
-[node name="Ghost_1" parent="Monsters" instance=ExtResource( 7 )]
+[node name="Ghost_1" parent="Monsters" instance=ExtResource( 8 )]
 position = Vector2( 2120, 790 )
 
-[node name="Ghost_2" parent="Monsters" instance=ExtResource( 7 )]
+[node name="Ghost_2" parent="Monsters" instance=ExtResource( 8 )]
 position = Vector2( 2010, 250 )
 
-[node name="Ghost_3" parent="Monsters" instance=ExtResource( 7 )]
+[node name="Ghost_3" parent="Monsters" instance=ExtResource( 8 )]
 position = Vector2( 3010, 260 )
 
-[node name="Ghost_4" parent="Monsters" instance=ExtResource( 7 )]
+[node name="Ghost_4" parent="Monsters" instance=ExtResource( 8 )]
 position = Vector2( 4150, 265 )
 
-[node name="Ghost_5" parent="Monsters" instance=ExtResource( 7 )]
+[node name="Ghost_5" parent="Monsters" instance=ExtResource( 8 )]
 position = Vector2( 4440, 540 )
 
-[node name="Ghost_6" parent="Monsters" instance=ExtResource( 7 )]
+[node name="Ghost_6" parent="Monsters" instance=ExtResource( 8 )]
 position = Vector2( 5880, 280 )
 
 [node name="Buraco" type="StaticBody2D" parent="." groups=[
@@ -835,13 +839,13 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Buraco"]
-shape = SubResource( 33 )
+shape = SubResource( 38 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 8 )
+stream = ExtResource( 9 )
 volume_db = -5.0
 autoplay = true
 mix_target = 1
 
-[node name="Portal" parent="." instance=ExtResource( 9 )]
+[node name="Portal" parent="." instance=ExtResource( 10 )]
 position = Vector2( 6330, 250 )
