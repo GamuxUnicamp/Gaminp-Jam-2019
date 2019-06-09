@@ -6,11 +6,13 @@ const JUMP = -1500
 const WALK = 400
 
 var velocity = Vector2(0,10)
+var sprite
 var jump_sound
 var die_sound
 var kill_monster_sound
 
 func _ready():
+	sprite = get_node("Sprite")
 	jump_sound = get_node("JumpSound")
 	die_sound = get_node("DieSound")
 	kill_monster_sound = get_node("KilMonsterSound")
@@ -23,8 +25,10 @@ func _physics_process(delta):
 	self.move_and_slide(velocity,UP)
 	if Input.is_action_pressed("ui_left") and (not Input.is_action_pressed("ui_right")):
 		velocity.x = -WALK
+		sprite.set_flip_h(false)
 	elif Input.is_action_pressed("ui_right") and (not Input.is_action_pressed("ui_left")):
 		velocity.x = WALK
+		sprite.set_flip_h(true)
 	else:
 		velocity.x = 0
 	if self.is_on_floor():

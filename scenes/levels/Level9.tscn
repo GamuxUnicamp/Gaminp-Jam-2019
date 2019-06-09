@@ -159,3 +159,4 @@ mix_target = 1
 
 [node name="Portal" parent="." instance=ExtResource( 9 )]
 position = Vector2( 12990, 597 )
+
