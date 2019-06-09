@@ -9,7 +9,7 @@
 [ext_resource path="res://scenes/monsters/Orange.tscn" type="PackedScene" id=7]
 [ext_resource path="res://scenes/monsters/Blue.tscn" type="PackedScene" id=8]
 [ext_resource path="res://scenes/monsters/Red.tscn" type="PackedScene" id=9]
-[ext_resource path="res://media/opengameart/Muncheybobo/Adventure Music.ogg" type="AudioStream" id=10]
+[ext_resource path="res://media/Fischer/Mushroom/MOS Jazz.ogg" type="AudioStream" id=10]
 [ext_resource path="res://scenes/Portal.tscn" type="PackedScene" id=11]
 
 [sub_resource type="DynamicFont" id=1]

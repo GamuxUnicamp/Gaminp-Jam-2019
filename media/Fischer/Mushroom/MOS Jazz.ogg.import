@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/MOS Jazz.ogg-d684d3ca275d84085cad2d169378e171.oggstr"
+
+[deps]
+
+source_file="res://media/Fischer/Mushroom/MOS Jazz.ogg"
+dest_files=[ "res://.import/MOS Jazz.ogg-d684d3ca275d84085cad2d169378e171.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

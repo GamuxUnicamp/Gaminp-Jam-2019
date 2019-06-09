@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/MOS Goth-Rock.ogg-9fffb837213f1d3af4e468db6d36f97b.oggstr"
+
+[deps]
+
+source_file="res://media/Fischer/VampireCastle/MOS Goth-Rock.ogg"
+dest_files=[ "res://.import/MOS Goth-Rock.ogg-9fffb837213f1d3af4e468db6d36f97b.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

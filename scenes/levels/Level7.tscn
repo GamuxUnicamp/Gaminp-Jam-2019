@@ -9,7 +9,7 @@
 [ext_resource path="res://scenes/Player2.tscn" type="PackedScene" id=7]
 [ext_resource path="res://scenes/monsters/Ghost.tscn" type="PackedScene" id=8]
 [ext_resource path="res://scenes/monsters/Skeleton.tscn" type="PackedScene" id=9]
-[ext_resource path="res://media/opengameart/HydroGene/MonsterVania - Ghost Land.ogg" type="AudioStream" id=10]
+[ext_resource path="res://media/Fischer/VampireCastle/MOS Goth-Rock.ogg" type="AudioStream" id=10]
 [ext_resource path="res://scenes/Portal.tscn" type="PackedScene" id=11]
 
 [sub_resource type="DynamicFont" id=1]

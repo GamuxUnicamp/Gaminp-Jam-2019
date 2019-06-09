@@ -14,4 +14,4 @@ func _ready():
 func _physics_process(delta):
 	if portal.overlaps_body(player):
 		global.lives = 3
-		get_tree().change_scene("res://scenes/levels/Level9.tscn")
+		get_tree().change_scene("res://scenes/StoryEnd.tscn")

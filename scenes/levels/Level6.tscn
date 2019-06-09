@@ -8,7 +8,7 @@
 [ext_resource path="res://media/opengameart/Jetrel/twilight-tiles.png" type="Texture" id=6]
 [ext_resource path="res://scenes/Player2.tscn" type="PackedScene" id=7]
 [ext_resource path="res://scenes/monsters/Ghost.tscn" type="PackedScene" id=8]
-[ext_resource path="res://media/opengameart/HydroGene/MonsterVania - Ghost Land.ogg" type="AudioStream" id=9]
+[ext_resource path="res://media/Fischer/VampireCastle/MOS Goth-Rock.ogg" type="AudioStream" id=9]
 [ext_resource path="res://scenes/Portal.tscn" type="PackedScene" id=10]
 
 [sub_resource type="DynamicFont" id=1]
