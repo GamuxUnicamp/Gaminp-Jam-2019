@@ -70,10 +70,10 @@ tile_data = PoolIntArray( 65535, 16, 0, 75, 30, 0, 91, 30, 0, 106, 30, 0, 121, 3
 [node name="Player" parent="." groups=[
 "player",
 ] instance=ExtResource( 6 )]
-editor/display_folded = true
-position = Vector2( 99.9805, 765.979 )
+position = Vector2( 155.366, 803.742 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2( 3.99451, 63.9121 )
 current = true
 limit_left = 0
 limit_top = 0

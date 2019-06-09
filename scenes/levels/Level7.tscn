@@ -6,7 +6,7 @@
 [ext_resource path="res://scenes/levels/AnimVampBackground.tres" type="Animation" id=4]
 [ext_resource path="res://media/fonts/SourceCodePro-Regular.ttf" type="DynamicFontData" id=5]
 [ext_resource path="res://media/opengameart/Jetrel/twilight-tiles.png" type="Texture" id=6]
-[ext_resource path="res://scenes/Player1.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/Player2.tscn" type="PackedScene" id=7]
 [ext_resource path="res://scenes/monsters/Ghost.tscn" type="PackedScene" id=8]
 [ext_resource path="res://scenes/monsters/Skeleton.tscn" type="PackedScene" id=9]
 [ext_resource path="res://media/opengameart/HydroGene/MonsterVania - Ghost Land.ogg" type="AudioStream" id=10]
@@ -795,10 +795,9 @@ tile_data = PoolIntArray( -262041, 15, 0, -262040, 15, 0, -131073, 15, 0, -19650
 [node name="Player" parent="." groups=[
 "player",
 ] instance=ExtResource( 7 )]
-position = Vector2( 1080, 830 )
+position = Vector2( 780, 830 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2( -120, 0 )
 current = true
 limit_left = 0
 limit_top = 0
@@ -809,62 +808,101 @@ drag_margin_left = 0.1
 drag_margin_right = 0.1
 
 [node name="Monsters" type="Node" parent="."]
+editor/display_folded = true
 
-[node name="Ghost_0" parent="Monsters" instance=ExtResource( 8 )]
+[node name="Ghost_0" parent="Monsters" groups=[
+"monsters",
+] instance=ExtResource( 8 )]
 position = Vector2( 214.5, 800 )
 
-[node name="Ghost_1" parent="Monsters" instance=ExtResource( 8 )]
+[node name="Ghost_1" parent="Monsters" groups=[
+"monsters",
+] instance=ExtResource( 8 )]
 position = Vector2( 2190, 795 )
 
-[node name="Ghost_2" parent="Monsters" instance=ExtResource( 8 )]
+[node name="Ghost_2" parent="Monsters" groups=[
+"monsters",
+] instance=ExtResource( 8 )]
 position = Vector2( 2010, 250 )
 
-[node name="Ghost_3" parent="Monsters" instance=ExtResource( 8 )]
+[node name="Ghost_3" parent="Monsters" groups=[
+"monsters",
+] instance=ExtResource( 8 )]
 position = Vector2( 3010, 260 )
 
-[node name="Ghost_4" parent="Monsters" instance=ExtResource( 8 )]
+[node name="Ghost_4" parent="Monsters" groups=[
+"monsters",
+] instance=ExtResource( 8 )]
 position = Vector2( 4150, 265 )
 
-[node name="Ghost_5" parent="Monsters" instance=ExtResource( 8 )]
+[node name="Ghost_5" parent="Monsters" groups=[
+"monsters",
+] instance=ExtResource( 8 )]
 position = Vector2( 4440, 540 )
 
-[node name="Ghost_6" parent="Monsters" instance=ExtResource( 8 )]
+[node name="Ghost_6" parent="Monsters" groups=[
+"monsters",
+] instance=ExtResource( 8 )]
 position = Vector2( 5880, 280 )
 
-[node name="Ghost_7" parent="Monsters" instance=ExtResource( 8 )]
+[node name="Ghost_7" parent="Monsters" groups=[
+"monsters",
+] instance=ExtResource( 8 )]
 position = Vector2( 6870, 270 )
 
-[node name="Ghost_8" parent="Monsters" instance=ExtResource( 8 )]
+[node name="Ghost_8" parent="Monsters" groups=[
+"monsters",
+] instance=ExtResource( 8 )]
 position = Vector2( 7410, 270 )
 
-[node name="Ghost_9" parent="Monsters" instance=ExtResource( 8 )]
+[node name="Ghost_9" parent="Monsters" groups=[
+"monsters",
+] instance=ExtResource( 8 )]
 position = Vector2( 6810, 800 )
 
-[node name="Ghost_10" parent="Monsters" instance=ExtResource( 8 )]
+[node name="Ghost_10" parent="Monsters" groups=[
+"monsters",
+] instance=ExtResource( 8 )]
 position = Vector2( 9010, 790 )
 
-[node name="Ghost_11" parent="Monsters" instance=ExtResource( 8 )]
+[node name="Ghost_11" parent="Monsters" groups=[
+"monsters",
+] instance=ExtResource( 8 )]
 position = Vector2( 8510, 240 )
 
-[node name="Skeleton_0" parent="Monsters" instance=ExtResource( 9 )]
+[node name="Skeleton_0" parent="Monsters" groups=[
+"monsters",
+] instance=ExtResource( 9 )]
 position = Vector2( 2080, 840 )
 
-[node name="Skeleton_1" parent="Monsters" instance=ExtResource( 9 )]
+[node name="Skeleton_1" parent="Monsters" groups=[
+"monsters",
+] instance=ExtResource( 9 )]
 position = Vector2( 2890, 500 )
 
-[node name="Skeleton_2" parent="Monsters" instance=ExtResource( 9 )]
+[node name="Skeleton_2" parent="Monsters" groups=[
+"monsters",
+] instance=ExtResource( 9 )]
 position = Vector2( 3050, 820 )
 
-[node name="Skeleton_3" parent="Monsters" instance=ExtResource( 9 )]
+[node name="Skeleton_3" parent="Monsters" groups=[
+"monsters",
+] instance=ExtResource( 9 )]
 position = Vector2( 3500, 810 )
 
-[node name="Skeleton_4" parent="Monsters" instance=ExtResource( 9 )]
+[node name="Skeleton_4" parent="Monsters" groups=[
+"monsters",
+] instance=ExtResource( 9 )]
 position = Vector2( 3800, 820 )
 
-[node name="Skeleton_5" parent="Monsters" instance=ExtResource( 9 )]
+[node name="Skeleton_5" parent="Monsters" groups=[
+"monsters",
+] instance=ExtResource( 9 )]
 position = Vector2( 7160, 820 )
 
-[node name="Skeleton_6" parent="Monsters" instance=ExtResource( 9 )]
+[node name="Skeleton_6" parent="Monsters" groups=[
+"monsters",
+] instance=ExtResource( 9 )]
 position = Vector2( 8580, 820 )
 
 [node name="Buraco" type="StaticBody2D" parent="." groups=[
