@@ -68,11 +68,11 @@ playback_speed = 0.9
 anims/StoryIntro = SubResource( 1 )
 
 [node name="background" type="Sprite" parent="."]
-texture = ExtResource( 5 )
+texture = ExtResource( 3 )
 centered = false
 
 [node name="BehindText" type="Sprite" parent="."]
-modulate = Color( 1, 1, 0.313726, 0.745098 )
+modulate = Color( 1, 1, 1, 0.784314 )
 position = Vector2( 960, 867 )
 texture = ExtResource( 6 )
 
@@ -124,7 +124,6 @@ Alf: A test.
 "
 autowrap = true
 clip_text = true
-lines_skipped = 51
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 51.0

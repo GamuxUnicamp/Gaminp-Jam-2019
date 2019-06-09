@@ -8,7 +8,7 @@ func _ready():
 	get_node("CreditsPanel/CloseButton").connect("button_down",self,"_on_close_down")
 
 func _on_play_down():
-	get_tree().change_scene("res://scenes/levels/Level1.tscn")
+	get_tree().change_scene("res://scenes/Instructions1.tscn")
 
 func _on_credits_down():
 	credits_panel.visible = true
