@@ -129,4 +129,3 @@ lines_skipped = 51
 [node name="Timer" type="Timer" parent="."]
 wait_time = 51.0
 autostart = true
-
