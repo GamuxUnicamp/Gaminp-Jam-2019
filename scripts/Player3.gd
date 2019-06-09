@@ -79,7 +79,10 @@ func _physics_process(delta):
 			global.lives -= 1
 			get_tree().reload_current_scene()
 			break # evita que o personagem morra mais de uma vez se houver mais de 1 colisão
-
+		elif collider.is_in_group("stair"):
+			if Input.is_action_pressed("ui_up"):
+				velocity.y = WALK
+				
 func _process(delta):
 	pass
 
