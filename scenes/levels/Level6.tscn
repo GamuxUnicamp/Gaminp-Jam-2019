@@ -863,3 +863,6 @@ mix_target = 1
 
 [node name="Portal" parent="." instance=ExtResource( 10 )]
 position = Vector2( 6330, 250 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 2

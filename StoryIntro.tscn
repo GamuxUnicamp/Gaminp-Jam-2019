@@ -128,4 +128,3 @@ clip_text = true
 [node name="Timer" type="Timer" parent="."]
 wait_time = 51.0
 autostart = true
-

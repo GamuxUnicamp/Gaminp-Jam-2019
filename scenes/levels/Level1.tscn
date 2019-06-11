@@ -164,3 +164,11 @@ mix_target = 1
 
 [node name="Portal" parent="." instance=ExtResource( 10 )]
 position = Vector2( 12990, 597 )
+
+[node name="ParallaxBackground2" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground2"]
+motion_scale = Vector2( 0, 0 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 2
