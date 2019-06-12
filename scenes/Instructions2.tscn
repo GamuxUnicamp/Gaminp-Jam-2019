@@ -35,6 +35,7 @@ texture = ExtResource( 4 )
 [node name="Timer" type="Timer" parent="."]
 wait_time = 4.0
 one_shot = true
+autostart = true
 
 [node name="X_KEY" type="Sprite" parent="."]
 position = Vector2( 750, 800 )
