@@ -46,6 +46,7 @@ func _physics_process(delta):
 		var collider = get_slide_collision(i).collider
 		if collider.is_in_group("instakill"):
 			global.lives -= 1
+			global.just_died = true;
 			get_tree().reload_current_scene()
 			break
 		elif collider.is_in_group("monsters"):
@@ -55,5 +56,6 @@ func _physics_process(delta):
 				collider.queue_free()
 			else:
 				global.lives -= 1
+				global.just_died = true
 				get_tree().reload_current_scene()
 				break # evita que o personagem morra mais de uma vez se houver mais de 1 colisão

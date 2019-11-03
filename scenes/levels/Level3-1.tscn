@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=2]
 
-[ext_resource path="res://scripts/Level1.gd" type="Script" id=1]
+[ext_resource path="res://scripts/Level1-1.gd" type="Script" id=1]
 [ext_resource path="res://media/mushroom_forest_background.jpg" type="Texture" id=2]
 [ext_resource path="res://media/fonts/SourceCodePro-Regular.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://scenes/Level1.tres" type="TileSet" id=4]
@@ -9,6 +9,7 @@
 [ext_resource path="res://scenes/monsters/Orange.tscn" type="PackedScene" id=7]
 [ext_resource path="res://media/opengameart/Muncheybobo/Adventure Music.ogg" type="AudioStream" id=8]
 [ext_resource path="res://scenes/Portal.tscn" type="PackedScene" id=9]
+
 
 [sub_resource type="DynamicFont" id=1]
 size = 50
@@ -194,4 +195,3 @@ __meta__ = {
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Buraco"]
 position = Vector2( 13.2314, -4.41052 )
 shape = SubResource( 3 )
-

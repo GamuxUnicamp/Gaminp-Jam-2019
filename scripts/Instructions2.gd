@@ -7,4 +7,4 @@ func _ready():
 
 
 func proxima_cena():
-	get_tree().change_scene("res://scenes/levels/Level6.tscn")
+	get_tree().change_scene("res://scenes/levels/Level2-1.tscn")

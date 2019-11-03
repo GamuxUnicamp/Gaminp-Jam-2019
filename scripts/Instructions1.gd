@@ -8,4 +8,4 @@ func _ready():
 
 
 func proxima_cena():
-	get_tree().change_scene("res://scenes/levels/Level1.tscn")
+	get_tree().change_scene("res://scenes/levels/Level1-1.tscn")

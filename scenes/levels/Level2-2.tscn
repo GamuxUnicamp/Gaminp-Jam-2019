@@ -1,6 +1,6 @@
 [gd_scene load_steps=50 format=2]
 
-[ext_resource path="res://scripts/Level7.gd" type="Script" id=1]
+[ext_resource path="res://scripts/Level2-2.gd" type="Script" id=1]
 [ext_resource path="res://media/full_black.jpg" type="Texture" id=2]
 [ext_resource path="res://media/vampire_castle_background.jpg" type="Texture" id=3]
 [ext_resource path="res://scenes/levels/AnimVampBackground.tres" type="Animation" id=4]
@@ -11,6 +11,7 @@
 [ext_resource path="res://scenes/monsters/Skeleton.tscn" type="PackedScene" id=9]
 [ext_resource path="res://media/Fischer/VampireCastle/MOS Goth-Rock.ogg" type="AudioStream" id=10]
 [ext_resource path="res://scenes/Portal.tscn" type="PackedScene" id=11]
+
 
 [sub_resource type="DynamicFont" id=1]
 size = 50
