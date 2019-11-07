@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/exterior-parallaxBG1.png-1c60c50dc851b8302c1b001ab71a197c.stex"
+path="res://.import/Gum Bot.png-97a65704eac07ec8966fa230301829be.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/opengameart/Jetrel/exterior-parallaxBG1.png"
-dest_files=[ "res://.import/exterior-parallaxBG1.png-1c60c50dc851b8302c1b001ab71a197c.stex" ]
+source_file="res://media/opengameart/GrafxKid/Gum Bot.png"
+dest_files=[ "res://.import/Gum Bot.png-97a65704eac07ec8966fa230301829be.stex" ]
 
 [params]
 
@@ -24,7 +24,7 @@ flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
-process/fix_alpha_border=true
+process/fix_alpha_border=false
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false

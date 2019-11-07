@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://scripts/StoryEnd.gd" type="Script" id=1]
+[ext_resource path="res://scripts/StoryMiddle2.gd" type="Script" id=1]
 [ext_resource path="res://media/opengameart/SubspaceAudio/Ending.wav" type="AudioStream" id=2]
 [ext_resource path="res://media/story_start3.jpg" type="Texture" id=3]
 [ext_resource path="res://media/behind_text.png" type="Texture" id=4]
@@ -8,7 +8,7 @@
 
 [sub_resource type="Animation" id=1]
 resource_name = "StoryIntro"
-length = 15.0
+length = 8.0
 step = 0.5
 tracks/0/type = "value"
 tracks/0/path = NodePath("background:texture")
@@ -29,10 +29,10 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 2.5, 5, 8.5 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 3.5 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 1,
-"values": [ 0, 4, 7, 12 ]
+"values": [ 0, 4 ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("BehindText:modulate")
@@ -41,10 +41,10 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 2.5, 5, 8.5 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 3.5 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 2,
-"values": [ Color( 1, 1, 1, 0.784314 ), Color( 1, 1, 0.313726, 0.784314 ), Color( 1, 1, 1, 0.784314 ), Color( 1, 1, 0.313726, 0.784314 ) ]
+"values": [ Color( 1, 1, 1, 0.784314 ), Color( 1, 1, 0.313726, 0.784314 ) ]
 }
 
 [sub_resource type="DynamicFont" id=2]
@@ -70,7 +70,7 @@ texture = ExtResource( 3 )
 centered = false
 
 [node name="BehindText" type="Sprite" parent="."]
-modulate = Color( 1, 1, 1, 0.784314 )
+modulate = Color( 1, 1, 0.313726, 0.784314 )
 position = Vector2( 960, 867 )
 texture = ExtResource( 4 )
 
@@ -80,19 +80,13 @@ margin_top = 730.0
 margin_right = 1860.0
 margin_bottom = 1010.0
 custom_fonts/font = SubResource( 2 )
-text = "The voice was getting impatient, though. Was it enough? Did Alf know already?
+text = "The voice wanted to know if Alf thought it was enough.
 
 
-Alf: I think I do.
-
-
-What, then, did Alf deserve? Would he spend his eternity on paradise? Or perhaps, after all, he did deserve punishment?
-
-
-Alf: I think I have passed the tests. I think I deserve paradise."
+Alf: Just a bit more. "
 autowrap = true
 clip_text = true
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 10.0
+wait_time = 7.0
 autostart = true

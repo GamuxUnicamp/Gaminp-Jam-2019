@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/working-title1.png-71d12f667e9d49c84cf78b38ead93474.stex"
+path="res://.import/mobile_button_attack_2.png-919dc2b931e26bf5bea148fb548b20a9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://media/opengameart/Jetrel/working-title1.png"
-dest_files=[ "res://.import/working-title1.png-71d12f667e9d49c84cf78b38ead93474.stex" ]
+source_file="res://media/mobile/mobile_button_attack_2.png"
+dest_files=[ "res://.import/mobile_button_attack_2.png-919dc2b931e26bf5bea148fb548b20a9.stex" ]
 
 [params]
 

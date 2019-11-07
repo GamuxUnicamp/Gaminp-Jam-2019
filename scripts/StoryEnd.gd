@@ -8,8 +8,9 @@ func _ready():
 	set_process_input(true)
 
 func _input(event):
-	if (event is InputEventKey or event is InputEventScreenTouch):
-		proxima_cena()
+	#proxima_cena()
+	#if (event is InputEventKey or event is InputEventScreenTouch):
+	#	proxima_cena()
 	pass
 
 func proxima_cena():

@@ -24,7 +24,7 @@ func _ready():
 	jump_sound = get_node("JumpSound")
 	die_sound = get_node("DieSound")
 	shoot_sound = get_node("ShootSound")
-	kill_monster_sound = get_node("KilMonsterSound")
+	kill_monster_sound = get_node("KillMonsterSound")
 	attack_timer = get_node("AttackTimer")
 	bullet_scene = load("res://scenes/Bullet.tscn")
 	bullet_holder = get_node("BulletHolder")
@@ -81,10 +81,11 @@ func _physics_process(delta):
 			global.just_died = true
 			get_tree().reload_current_scene()
 			break # evita que o personagem morra mais de uma vez se houver mais de 1 colisão
-		elif collider.is_in_group("stair"):
-			if Input.is_action_pressed("ui_up"):
-				velocity.y = WALK
-				
+		#elif collider.is_in_group("stair"):
+		#	#if Input.is_action_pressed("ui_up"):
+		#	velocity.y = JUMP
+		#	jump_sound.play()
+
 func _process(delta):
 	pass
 

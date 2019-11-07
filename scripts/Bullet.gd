@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 var bullet_velocity = Vector2(0,0)
 
-onready var kill_monster_sound = get_node("KillMonsterSound")
+onready var kill_monster_sound = $KillMonsterSound
 
 func _ready():
 	set_physics_process(true)
